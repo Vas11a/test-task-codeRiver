@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/test-task-codeRiver/static/css/main.20e6bcf7.css",
+    "main.js": "/test-task-codeRiver/static/js/main.ec19c4f6.js",
+    "static/media/main_img.png": "/test-task-codeRiver/static/media/main_img.eb8a8423b759b8ab0eba.png",
+    "static/media/im-1.png": "/test-task-codeRiver/static/media/im-1.29aafa7e576f0214b4db.png",
+    "static/media/im.png": "/test-task-codeRiver/static/media/im.0886e1fb5c4f43570ea8.png",
+    "static/media/im-2.png": "/test-task-codeRiver/static/media/im-2.26c87b7b676779573bc2.png",
+    "static/media/im-3.png": "/test-task-codeRiver/static/media/im-3.d525b78ae4b1d97cccca.png",
+    "index.html": "/test-task-codeRiver/index.html",
+    "main.20e6bcf7.css.map": "/test-task-codeRiver/static/css/main.20e6bcf7.css.map",
+    "main.ec19c4f6.js.map": "/test-task-codeRiver/static/js/main.ec19c4f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20e6bcf7.css",
+    "static/js/main.ec19c4f6.js"
+  ]
+}
