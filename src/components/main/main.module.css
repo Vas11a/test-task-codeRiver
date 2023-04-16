@@ -1,0 +1,280 @@
+.container{
+    padding-top: 70px;
+    display: flex;
+    height: 900px;
+}
+
+.text_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    position: relative;
+    z-index: 5;
+}
+
+.app_block{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.img_app_block{
+    display: flex;
+    gap: 10px;
+}
+
+.ios, .andriod{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #E1E3E9;
+    background-color: #2D3240;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition-duration: .7s;
+}
+
+.ios:hover, .andriod:hover{
+    transform: scale(1.2);
+}
+
+.ios:active, .andriod:active{
+    transform: scale(1);
+}
+
+.ios>img{
+    width: 25px;
+    height: auto;
+}
+
+.andriod>img{
+    width: 25px;
+    height: auto;
+}
+
+.andriod{
+    margin-left: -22px;
+}
+
+.app_text{
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+.text{
+    font-family: 'Oswald';
+    font-size: 85px;
+    text-transform: uppercase;
+}
+.look_cont{
+    position: relative;
+    height: 100px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.look{
+    font-size: 75px;
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    padding: 0 5px;
+    background-color: #BAFD37;
+    position: absolute;
+    transform: rotate(10deg);
+    border-radius: 8px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.look::after{
+    content: '*';
+    position: absolute;
+    top: -20px;
+    right: -23px;
+}
+
+.img_block{
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 5;
+}
+
+
+.main_img{
+    width: auto;
+    height: 100%;
+}
+
+.line{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 220px;
+    right: 0;
+}
+
+path {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    animation: run 6s linear infinite;
+}
+  
+@keyframes run {
+    0% {
+      stroke-dashoffset: 3000;
+    }
+    50% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: -3000;
+    }
+}
+
+@media screen and (max-width: 1675px) {
+    path{
+        stroke-width: 10;
+    }
+}
+
+
+@media screen and (max-width: 1675px) {
+    .line{
+        top: 140px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .container{
+        height: 500px;
+    }
+    .text{
+        font-size: 45px;
+    }
+    .look::after{
+        top: -17px;
+        right: -12px;
+    }
+    .look{
+        font-size: 45px;
+    }
+    .look_cont{
+        margin: 0;
+        height: 70px;
+    }
+    .line{
+        height: 300px;
+        top: 200px;
+    }
+}
+
+
+@media screen and (max-width: 880px) {
+    .line{
+        top: 250px;
+    }
+    path{
+        stroke-width: 15;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .text{
+        font-size: 40px;
+    }
+    .look{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container{
+        flex-direction: column;
+        height: auto;
+        padding-top: 20px;
+    }
+    path{
+        stroke-width: 20;
+    
+    }
+    .line{
+        height: 200px;
+        top: 350px;
+    }
+    .main_img{
+        width: 80%;
+        height: auto;
+        margin-top: 50px;
+    }
+    .text_block{
+        gap: 20px;
+    }
+    .text{
+        font-size: 40px;
+    }
+
+    .look_cont{
+        width: 100px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .container{
+        padding-top: 25px;
+        margin-top: 15px;
+        border-top: 2px solid #2D3240;
+    }
+    .text_block{
+        gap: 30px;
+    }
+    .text{
+        font-size: 35px;
+        text-align: center;
+    }
+    .look{
+        font-size: 35px;
+    }
+    .look::after{
+        top: -15px;
+        right: -9px;
+    }
+    .look_cont{
+        height: 50px;
+    }
+    .ios, .andriod{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    
+    .ios>img{
+        width: 20px;
+    }
+    
+    .andriod>img{
+        width: 20px;
+    }
+    
+    .andriod{
+        margin-left: -22px;
+    }
+    .app_text{
+        font-size: 18px;
+    }
+    .main_img{
+        width: 95%;
+    }
+    path{
+        stroke-width: 30;
+    
+    }
+    .line{
+        top: 380px;
+    }
+}

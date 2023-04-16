@@ -1,0 +1,103 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-family: 'Jomhuria';
+    text-transform: uppercase;
+    font-size: 90px;
+    cursor: pointer;
+    font-weight: normal;
+    color: #2E3341;
+}
+
+.menu_block{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    gap: 7px;
+    align-items: center;
+}
+
+.part_menu{
+    font-family: 'Roboto';
+    font-size: 20px;
+    cursor: pointer;
+    transition-duration: .7s;
+}
+
+.part_menu:hover{
+    color: gray;
+    transform: scale(1.1);
+}
+
+.block_buy{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #F54329;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .7s;
+    cursor: pointer;
+}
+
+.block_buy:hover{
+    background-color: #FDB020;
+    transform: rotate(-19.5deg);
+}
+
+.block_buy:active{
+    background-color: #F54329;
+    transform: rotate(19.5deg);
+}
+
+.text_buy{
+    font-family: 'Oswald';
+    color: white;
+    text-transform: uppercase;
+    font-size: 27px;
+    transform: rotate(19.5deg);
+}
+
+
+@media screen and (max-width: 900px) {
+    .container{
+        flex-direction: column;
+    }
+    .menu_block{
+        width: 100%;
+    }
+    .title{
+        font-size: 120px;
+        margin-bottom: -20px;
+    }
+}
+
+@media screen and ( max-width: 530px) {
+    .title{
+        font-size: 90px;
+        margin-bottom: 0;
+    }
+    .menu_block{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+  }
+
+  @media screen and ( max-width: 450px) {
+    .block_buy{
+        width: 60px;
+        height: 60px;
+    }
+    .text_buy{
+        font-size: 22px;
+    }
+    
+  }
+
